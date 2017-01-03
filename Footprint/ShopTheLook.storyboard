@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shop The LookVC-->
+        <scene sceneID="cPT-qL-Wuh">
+            <objects>
+                <viewController storyboardIdentifier="ShopTheLookVC" id="B0q-lo-wln" customClass="ShopTheLookVC" customModule="Footprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oeo-Zk-VvO"/>
+                        <viewControllerLayoutGuide type="bottom" id="pKu-lV-5nb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="89j-dX-TbN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="213" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="K4S-Ho-aeB" customClass="EndlessTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-yl-Tq3" customClass="EndlessTableView">
+                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OdK-yl-Tq3" firstAttribute="width" secondItem="K4S-Ho-aeB" secondAttribute="width" id="3XW-0M-NIH"/>
+                            <constraint firstItem="K4S-Ho-aeB" firstAttribute="leading" secondItem="89j-dX-TbN" secondAttribute="leading" id="Lgf-DP-2BA"/>
+                            <constraint firstItem="K4S-Ho-aeB" firstAttribute="top" secondItem="oeo-Zk-VvO" secondAttribute="bottom" id="MUR-6U-tHn"/>
+                            <constraint firstItem="pKu-lV-5nb" firstAttribute="top" secondItem="K4S-Ho-aeB" secondAttribute="bottom" id="UfP-P9-iTq"/>
+                            <constraint firstItem="pKu-lV-5nb" firstAttribute="top" secondItem="OdK-yl-Tq3" secondAttribute="bottom" id="aub-aO-yWE"/>
+                            <constraint firstItem="OdK-yl-Tq3" firstAttribute="top" secondItem="oeo-Zk-VvO" secondAttribute="bottom" id="fRB-lf-5Fg"/>
+                            <constraint firstAttribute="trailing" secondItem="OdK-yl-Tq3" secondAttribute="trailing" id="hUb-th-wqQ"/>
+                            <constraint firstItem="K4S-Ho-aeB" firstAttribute="width" secondItem="89j-dX-TbN" secondAttribute="width" multiplier="0.5" id="vK9-7G-0RI"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="leftTableView" destination="K4S-Ho-aeB" id="PkX-Rl-jfj"/>
+                        <outlet property="rightTableView" destination="OdK-yl-Tq3" id="nxv-rl-OdG"/>
+                        <segue destination="KMe-cP-sB4" kind="show" identifier="ShopTheLookProductSegue" id="tjy-uS-e9S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1A-aU-J22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-134"/>
+        </scene>
+        <!--Shop The Look ProductVC-->
+        <scene sceneID="1k7-oD-0g9">
+            <objects>
+                <viewController storyboardIdentifier="ShopTheLookProductVC" id="KMe-cP-sB4" customClass="ShopTheLookProductVC" customModule="Footprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2lk-ZL-Rtj"/>
+                        <viewControllerLayoutGuide type="bottom" id="uzj-f7-9dX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Axr-JS-B5K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddg-mv-KXJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Nge-5h-nrO"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FMQ-hB-upG">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbK-bg-jlw" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop The Look Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0h-o1-Rg9">
+                                        <rect key="frame" x="40" y="0.0" width="295" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.25161637931034481" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="p0h-o1-Rg9" firstAttribute="top" secondItem="WbK-bg-jlw" secondAttribute="top" id="5hM-zl-dit"/>
+                                    <constraint firstItem="p0h-o1-Rg9" firstAttribute="leading" secondItem="WbK-bg-jlw" secondAttribute="leading" constant="40" id="Bvs-TW-pBh"/>
+                                    <constraint firstAttribute="trailing" secondItem="p0h-o1-Rg9" secondAttribute="trailing" constant="40" id="Naa-3N-e3C"/>
+                                    <constraint firstAttribute="bottom" secondItem="p0h-o1-Rg9" secondAttribute="bottom" id="cin-i7-cZQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="d6a-AW-O6N"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L1P-Np-QPf">
+                                <rect key="frame" x="10" y="288.5" width="100" height="133"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="oaI-PC-oFX"/>
+                                </constraints>
+                                <collectionViewLayout key="collectionViewLayout" id="SKh-h4-MMq" customClass="ShopTheLookProductLayout" customModule="Footprint" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FMQ-hB-upG" firstAttribute="top" secondItem="Ddg-mv-KXJ" secondAttribute="bottom" id="2ef-gn-gfp"/>
+                            <constraint firstItem="FMQ-hB-upG" firstAttribute="leading" secondItem="Axr-JS-B5K" secondAttribute="leading" id="Dvo-xo-iZJ"/>
+                            <constraint firstAttribute="trailing" secondItem="WbK-bg-jlw" secondAttribute="trailing" id="MyX-Kd-v87"/>
+                            <constraint firstItem="L1P-Np-QPf" firstAttribute="height" secondItem="Axr-JS-B5K" secondAttribute="height" multiplier="0.2" id="QVQ-kl-Dbe"/>
+                            <constraint firstItem="WbK-bg-jlw" firstAttribute="leading" secondItem="Axr-JS-B5K" secondAttribute="leading" id="bS1-rG-Ub4"/>
+                            <constraint firstItem="uzj-f7-9dX" firstAttribute="top" secondItem="FMQ-hB-upG" secondAttribute="bottom" id="fwh-BB-zPh"/>
+                            <constraint firstItem="L1P-Np-QPf" firstAttribute="leading" secondItem="Axr-JS-B5K" secondAttribute="leading" constant="10" id="htU-eA-FtM"/>
+                            <constraint firstAttribute="trailing" secondItem="FMQ-hB-upG" secondAttribute="trailing" id="icg-c1-9qZ"/>
+                            <constraint firstItem="Ddg-mv-KXJ" firstAttribute="top" secondItem="2lk-ZL-Rtj" secondAttribute="bottom" id="oeT-V8-3q8"/>
+                            <constraint firstItem="uzj-f7-9dX" firstAttribute="top" secondItem="WbK-bg-jlw" secondAttribute="bottom" id="ssh-l9-eDV"/>
+                            <constraint firstAttribute="trailing" secondItem="Ddg-mv-KXJ" secondAttribute="trailing" id="tBg-yY-PCp"/>
+                            <constraint firstItem="Ddg-mv-KXJ" firstAttribute="leading" secondItem="Axr-JS-B5K" secondAttribute="leading" id="tfu-Ee-skY"/>
+                            <constraint firstItem="L1P-Np-QPf" firstAttribute="centerY" secondItem="FMQ-hB-upG" secondAttribute="centerY" id="uzi-lt-jzm"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="L1P-Np-QPf" id="AgR-8c-Zu0"/>
+                        <outlet property="imgProduct" destination="FMQ-hB-upG" id="j32-d3-jva"/>
+                        <outlet property="lblProductTitle" destination="p0h-o1-Rg9" id="IHw-aX-Aa0"/>
+                        <outlet property="viewBottom" destination="WbK-bg-jlw" id="htJ-6D-pLP"/>
+                        <outlet property="viewHeader" destination="Ddg-mv-KXJ" id="bDk-EY-7Jc"/>
+                        <outlet property="widthConstraintOfCollectionView" destination="oaI-PC-oFX" id="1JW-GE-pvU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gK9-pz-Dog" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688.79999999999995" y="-138.0809595202399"/>
+        </scene>
+    </scenes>
+</document>

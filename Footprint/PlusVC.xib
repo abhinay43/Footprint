@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlusVC" customModule="Footprint" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="eS7-hU-PBK" id="4Zy-il-J5l"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Bh1-2Y-tGd"/>
+                <outlet property="viewHeader" destination="eXQ-qi-suc" id="a4k-yl-nQZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eS7-hU-PBK">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXQ-qi-suc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="XgL-CH-fFp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eS7-hU-PBK" secondAttribute="trailing" id="CZA-T8-JyF"/>
+                <constraint firstAttribute="bottom" secondItem="eS7-hU-PBK" secondAttribute="bottom" id="HLI-tJ-Q2R"/>
+                <constraint firstAttribute="trailing" secondItem="eXQ-qi-suc" secondAttribute="trailing" id="UUW-wd-A1y"/>
+                <constraint firstItem="eXQ-qi-suc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cTH-db-ffl"/>
+                <constraint firstItem="eXQ-qi-suc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hpl-8i-djN"/>
+                <constraint firstItem="eS7-hU-PBK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oPR-oa-sVj"/>
+                <constraint firstItem="eS7-hU-PBK" firstAttribute="top" secondItem="eXQ-qi-suc" secondAttribute="bottom" id="vFG-ot-Pip"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

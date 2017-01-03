@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoeBrandCell" id="YUz-gk-ygd" customClass="ShoeBrandCell" customModule="Footprint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YUz-gk-ygd" id="FfE-Vy-nCn">
+                <frame key="frameInset" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brand" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-49-GQO">
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Nxe-ri-hBH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnV-8L-PIM">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="JYo-Mv-LcG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jnV-8L-PIM" firstAttribute="centerY" secondItem="o9p-49-GQO" secondAttribute="centerY" id="3aB-rd-Fy5"/>
+                    <constraint firstAttribute="trailing" secondItem="o9p-49-GQO" secondAttribute="trailing" id="4qP-Yb-h3x"/>
+                    <constraint firstItem="o9p-49-GQO" firstAttribute="top" secondItem="FfE-Vy-nCn" secondAttribute="top" id="JGS-wr-c13"/>
+                    <constraint firstItem="jnV-8L-PIM" firstAttribute="leading" secondItem="FfE-Vy-nCn" secondAttribute="leading" constant="15" id="NOo-9s-DVn"/>
+                    <constraint firstAttribute="trailing" secondItem="jnV-8L-PIM" secondAttribute="trailing" constant="15" id="Voi-Tv-wH9"/>
+                    <constraint firstItem="o9p-49-GQO" firstAttribute="leading" secondItem="FfE-Vy-nCn" secondAttribute="leading" id="sOl-A1-Ogq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="heightConstraint" destination="Nxe-ri-hBH" id="Du8-me-c5p"/>
+                <outlet property="lblTitle" destination="jnV-8L-PIM" id="bXD-aX-l6E"/>
+                <outlet property="sectionImage" destination="o9p-49-GQO" id="HpX-p6-E8m"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="-61"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Brand" width="750" height="560"/>
+    </resources>
+</document>

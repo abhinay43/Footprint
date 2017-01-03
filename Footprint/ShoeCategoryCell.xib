@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShoeCategoryCell" id="Z0U-Z7-ziG" customClass="ShoeCategoryCell" customModule="Footprint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="303"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="303"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YzL-31-vJY"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMk-Y0-sY0">
+                        <color key="backgroundColor" red="0.5568627451" green="0.65098039220000004" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWI-7G-jqZ">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="EEb-Bf-1eJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GWI-7G-jqZ" firstAttribute="centerX" secondItem="Z0U-Z7-ziG" secondAttribute="centerX" id="04j-nb-6I9"/>
+                <constraint firstItem="FMk-Y0-sY0" firstAttribute="leading" secondItem="Z0U-Z7-ziG" secondAttribute="leading" id="8jR-ky-xDd"/>
+                <constraint firstAttribute="bottom" secondItem="FMk-Y0-sY0" secondAttribute="bottom" id="I9c-kH-4YB"/>
+                <constraint firstItem="GWI-7G-jqZ" firstAttribute="leading" secondItem="Z0U-Z7-ziG" secondAttribute="leading" constant="15" id="JSU-wd-bjk"/>
+                <constraint firstItem="FMk-Y0-sY0" firstAttribute="top" secondItem="Z0U-Z7-ziG" secondAttribute="top" id="K6p-Q2-gra"/>
+                <constraint firstItem="GWI-7G-jqZ" firstAttribute="centerY" secondItem="Z0U-Z7-ziG" secondAttribute="centerY" id="KFS-xh-nWj"/>
+                <constraint firstAttribute="bottom" secondItem="YzL-31-vJY" secondAttribute="bottom" id="KY5-Ed-vvQ"/>
+                <constraint firstItem="YzL-31-vJY" firstAttribute="leading" secondItem="Z0U-Z7-ziG" secondAttribute="leading" id="STl-wO-eVp"/>
+                <constraint firstItem="YzL-31-vJY" firstAttribute="top" secondItem="Z0U-Z7-ziG" secondAttribute="top" id="fLc-dk-kqX"/>
+                <constraint firstAttribute="trailing" secondItem="YzL-31-vJY" secondAttribute="trailing" id="jES-vK-gF0"/>
+                <constraint firstAttribute="trailing" secondItem="FMk-Y0-sY0" secondAttribute="trailing" id="umh-4h-E6C"/>
+                <constraint firstAttribute="trailing" secondItem="GWI-7G-jqZ" secondAttribute="trailing" constant="15" id="xJx-cY-3Oc"/>
+            </constraints>
+            <size key="customSize" width="397" height="303"/>
+            <connections>
+                <outlet property="imgBackGround" destination="YzL-31-vJY" id="0dg-JN-8eE"/>
+                <outlet property="lblTitle" destination="GWI-7G-jqZ" id="Xtg-wE-a6M"/>
+                <outlet property="viewOverlay" destination="FMk-Y0-sY0" id="AoX-iL-lyf"/>
+            </connections>
+            <point key="canvasLocation" x="566.5" y="497.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlusHeaderView" customModule="Footprint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRv-s0-Vml">
+                    <rect key="frame" x="0.0" y="17" width="375" height="25"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btC-be-ded" userLabel="Seperator">
+                    <rect key="frame" x="30" y="64" width="315" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ydz-5e-hQN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="btC-be-ded" secondAttribute="bottom" id="7MZ-G2-bCi"/>
+                <constraint firstItem="XRv-s0-Vml" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E9J-GD-Bss"/>
+                <constraint firstItem="btC-be-ded" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="I04-9w-ezn"/>
+                <constraint firstAttribute="bottom" secondItem="XRv-s0-Vml" secondAttribute="bottom" constant="23" id="K1b-v0-ZNC"/>
+                <constraint firstItem="XRv-s0-Vml" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="Py3-mi-7Ok"/>
+                <constraint firstAttribute="trailing" secondItem="XRv-s0-Vml" secondAttribute="trailing" id="VWP-NA-T9b"/>
+                <constraint firstAttribute="trailing" secondItem="btC-be-ded" secondAttribute="trailing" constant="30" id="lS0-P3-yao"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblSeperator" destination="btC-be-ded" id="5xf-qV-s4Z"/>
+                <outlet property="lblTitle" destination="XRv-s0-Vml" id="oRc-6G-5Px"/>
+                <outletCollection property="gestureRecognizers" destination="thU-Nu-ayj" appends="YES" id="9XP-qW-ye8"/>
+            </connections>
+            <point key="canvasLocation" x="8.5" y="-149"/>
+        </view>
+        <tapGestureRecognizer id="thU-Nu-ayj">
+            <connections>
+                <action selector="tappedAction:" destination="iN0-l3-epB" id="92N-AR-I1z"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

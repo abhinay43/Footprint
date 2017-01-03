@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.2.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FacebookCore (0.2.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.15)
+  - FacebookLogin (0.2.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.2)
+    - FBSDKCoreKit (~> 4.15)
+    - FBSDKLoginKit (~> 4.15)
+  - FBSDKCoreKit (4.18.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.18.0):
+    - FBSDKCoreKit
+  - IQKeyboardManagerSwift (4.0.7)
+  - Kingfisher (3.0.1)
+  - LGSideMenuController (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - SFFocusViewLayout (3.1.0)
+  - SlideMenuControllerSwift (3.0.1)
+  - TTRangeSlider (1.0.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - FacebookCore
+  - FacebookLogin
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 3.0.1)
+  - LGSideMenuController
+  - MBProgressHUD
+  - SFFocusViewLayout
+  - SlideMenuControllerSwift
+  - TTRangeSlider
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
+  FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
+  FBSDKCoreKit: 15fef8804a4629f98c6f4e55e81a76c9d725d85e
+  FBSDKLoginKit: 6773073e970b2b15fb12e451ce7f11da0532b880
+  IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
+  Kingfisher: d5a491b45ea453d90a31bd2c0831d5243e73a73f
+  LGSideMenuController: dddebb372be0951db52bf78bced81e6cc01b94a4
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SFFocusViewLayout: 8524435eb57796adf3e7be1395c4e3786cd76dcc
+  SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
+  TTRangeSlider: 2f2ce4a33b32bb323c6575b9f5161c4664459c58
+
+PODFILE CHECKSUM: e94f95175aa296449589167082524bc7ac7c7137
+
+COCOAPODS: 1.2.0.beta.1

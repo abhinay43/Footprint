@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="y8W-cG-ppF" customClass="RefineTypesCell" customModule="Footprint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDt-kt-JBu">
+                        <rect key="frame" x="0.0" y="65" width="90" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="OnI-L8-hAa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19b-et-GOa">
+                        <rect key="frame" x="15" y="5" width="60" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="19b-et-GOa" secondAttribute="height" multiplier="1:1" id="dxn-Et-XqF"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="Brand3"/>
+                        <connections>
+                            <action selector="refineAction" destination="y8W-cG-ppF" eventType="touchUpInside" id="Sg0-ZQ-amC"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uDt-kt-JBu" firstAttribute="leading" secondItem="y8W-cG-ppF" secondAttribute="leading" id="GLX-EH-ezO"/>
+                <constraint firstItem="19b-et-GOa" firstAttribute="top" secondItem="y8W-cG-ppF" secondAttribute="top" constant="5" id="OJP-Kr-eiU"/>
+                <constraint firstItem="19b-et-GOa" firstAttribute="width" secondItem="y8W-cG-ppF" secondAttribute="height" multiplier="2:3" id="Xf5-wk-tis"/>
+                <constraint firstAttribute="trailing" secondItem="uDt-kt-JBu" secondAttribute="trailing" id="ZhL-iL-f00"/>
+                <constraint firstItem="19b-et-GOa" firstAttribute="centerX" secondItem="y8W-cG-ppF" secondAttribute="centerX" id="i57-Zk-rdf"/>
+                <constraint firstAttribute="bottom" secondItem="uDt-kt-JBu" secondAttribute="bottom" id="iI2-WC-IoM"/>
+            </constraints>
+            <size key="customSize" width="99" height="106"/>
+            <connections>
+                <outlet property="btnRefine" destination="19b-et-GOa" id="V0t-O3-5o1"/>
+                <outlet property="lblTitle" destination="uDt-kt-JBu" id="VVl-D4-aEi"/>
+            </connections>
+            <point key="canvasLocation" x="-58" y="-59"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brand3" width="340" height="253"/>
+    </resources>
+</document>
